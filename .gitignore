@@ -1,0 +1,8 @@
+/vendor/
+/.vscode/
+*.code-workspace
+Thumbs.db
+logs/
+cache/
+tmp/
+*.log

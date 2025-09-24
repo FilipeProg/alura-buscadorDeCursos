@@ -1,0 +1,42 @@
+{
+    "name": "filipeprogti/buscador-cursos",
+    "description": "Projeto que busca os cursos no site da Alura",
+    "version": "1.0.0",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Alura\\BuscadorDeCursos\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "FilipeProg",
+            "email": "filipeprogti@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.10",
+        "symfony/dom-crawler": "^7.3",
+        "symfony/css-selector": "^7.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.3",
+        "squizlabs/php_codesniffer": "^4.0",
+        "phan/phan": "^5.5"
+    },
+    "scripts": {
+        "cs": "phpcs --standard=PSR12 src/",
+        "phan": "phan --allow-polyfill-parser",
+        "ls": "dir",
+        "check": [
+            "@phan",
+            "@cs"
+        ],
+        "post-update-cmd": [
+            "@check"
+        ]
+    },
+    "scripts-descriptions": {
+        "check": "Roda as verificações do codigo. PHAN, PHPCS"
+    }
+}

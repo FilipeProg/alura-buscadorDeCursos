@@ -5,6 +5,7 @@
     "type": "library",
     "autoload": {
         "psr-4": {
+            "files": ["functions.php"],
             "Alura\\BuscadorDeCursos\\": "src/"
         }
     },
@@ -38,5 +39,7 @@
     },
     "scripts-descriptions": {
         "check": "Roda as verificações do codigo. PHAN, PHPCS"
-    }
+    },
+    "license": "GPL-3.0",
+    "bin": "buscar-cursos.php"
 }

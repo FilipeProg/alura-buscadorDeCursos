@@ -5,9 +5,9 @@
     "type": "library",
     "autoload": {
         "psr-4": {
-            "files": ["functions.php"],
             "Alura\\BuscadorDeCursos\\": "src/"
-        }
+        },
+        "files": ["functions.php"]
     },
     "authors": [
         {
